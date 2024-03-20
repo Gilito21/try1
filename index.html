@@ -7,14 +7,14 @@
 <body>
     <h2>Audio Player</h2>
     <audio controls>
-        <source src="static/Sherlock_audiobook.wav" type="audio/wav">
+        <source src="Sherlock_audiobook.wav" type="wav">
         Your browser does not support the audio element.
     </audio>
     <h1>Sherlock Holmes Book</h1>
     <div id="textContent">Loading content...</div>
 
     <script>
-        fetch('static/Sherlock-short_annotated_fixed.txt')
+        fetch('Sherlock-short_annotated_fixed.txt')
             .then(response => response.text())
             .then(text => {
                 document.getElementById('textContent').innerText = text;
